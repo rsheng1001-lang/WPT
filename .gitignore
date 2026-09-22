@@ -15,3 +15,27 @@ Coil/
 Thumbs.db
 *.bak
 *.tmp
+# 生成文件：MCP 工具缓存（verify staging / runs staging / experiments，可再生）
+.ltspice-mcp/
+# 生成文件：refine 精细化 deck + 日志（refine.py 重跑即再生；保留 refine/ 根的库文件）
+decks_*/
+# 生成文件：仿真日志与 LTspice 索引（runs_archive 权威归档与 work/logs 入库快照除外）
+*.log
+*.db
+!self_LPspice/runs_archive/**/*.log
+!self_LPspice/runs_archive/**/*.db
+!self_LPspice/runs_archive/**/*.op.raw
+!self_LPspice/bone_sweep_analysis/work/logs/**/*.log
+# 生成文件：work 聚合中间产物（ingest.py 重建；保留 sweeps/manifest/logs/ground_truth）
+self_LPspice/bone_sweep_analysis/work/parsed_*.json
+# 生成文件：出版图 TIFF 与 QA 副产物（make_figures.py 重画；保留 svg/pdf/源码与 QA_NOTES）
+*.tiff
+*.alignment.svg
+*.alignment.json
+*.collision-audit.*
+*.preview.png
+# 生成文件：ltspice 单次运行结果归档（重跑即再生；保留目录规范 README）
+LPspice_circuit/ltspice/Data/*
+!LPspice_circuit/ltspice/Data/README.md
+# 生成文件：GUI 手动运行副产物归档
+LPspice_circuit/archive/manual_gui_byproducts_*/

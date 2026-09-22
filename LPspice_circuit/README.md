@@ -29,9 +29,12 @@ ltspice/
   preview/*.svg       原理图预览
   summary.txt         最近一次完整验证的输出留档
 
+  Data/               归档的结果数据与图（一次运行一个文件夹），规范见 ltspice/Data/README.md
+  README_FILES.md     ltspice/ 文件地图（每个文件是干什么的）
+
 vendor/               第三方资料：Vishay SPICE 库、ST715/MCP1703A 数据手册、OPA333 原厂模型
-archive/              早期 PDF 渲染截图
-self/                 你自己的草稿与下载，未纳入本工程
+archive/              早期 PDF 渲染 + 顶层 GUI 副产物归档（manual_gui_byproducts_*）
+                      （../self_LPspice/ 是你之前的简化版草稿，未纳入本工程，见下表）
 ```
 
 ## 一键复现全部结论

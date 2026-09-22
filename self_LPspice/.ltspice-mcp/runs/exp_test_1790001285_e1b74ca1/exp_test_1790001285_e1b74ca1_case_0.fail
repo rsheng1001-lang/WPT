@@ -1,6 +1,0 @@
-D:\Shared\LPspice_circuit\self\.ltspice-mcp\runs\exp_test_1790001285_e1b74ca1\exp_test_1790001285_e1b74ca1_case_0.net(32): This results in only one step.
-.step param IREF list 20u
-      ^^^^^^^^^^^^^^^^^^^
-D:\Shared\LPspice_circuit\self\.ltspice-mcp\runs\exp_test_1790001285_e1b74ca1\exp_test_1790001285_e1b74ca1_case_0.net(34): This results in only one step.
-.step param VBP list 3.3
-      ^^^^^^^^^^^^^^^^^^

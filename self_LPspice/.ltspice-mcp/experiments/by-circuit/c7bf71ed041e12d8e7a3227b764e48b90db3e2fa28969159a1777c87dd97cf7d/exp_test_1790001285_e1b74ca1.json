@@ -1,8 +1,0 @@
-{
-  "schema": "ltspice-mcp/store",
-  "store_version": 1,
-  "kind": "circuit-index",
-  "job_id": "exp_test_1790001285_e1b74ca1",
-  "circuit": "D:\\Shared\\LPspice_circuit\\self\\bone_sweep_analysis\\refine\\test.net",
-  "created_at": "2026-09-21T09:34:45.176525-05:00"
-}

@@ -1,0 +1,7 @@
+# LTspice GUI 副产物:只忽略 ltspice/ 顶层的散落文件,runs/ 里的是有意保留的
+/*.raw
+/*.log
+/*.db
+/*.op.raw
+__pycache__/
+tools/__pycache__/

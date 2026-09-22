@@ -39,3 +39,5 @@ LPspice_circuit/ltspice/Data/*
 !LPspice_circuit/ltspice/Data/README.md
 # 生成文件：GUI 手动运行副产物归档
 LPspice_circuit/archive/manual_gui_byproducts_*/
+# 生成文件：仓库根误落的验证输出（正本在 LPspice_circuit/ltspice/summary.txt）
+/summary.txt

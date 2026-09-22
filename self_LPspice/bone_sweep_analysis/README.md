@@ -238,7 +238,10 @@ last-PASS 电阻**逐个精确相等**（无四舍五入、无插值、无平滑
   若电路改动（如运放失调变化），10 µA 行会最先变化。
 - 全程未对缺失点插值或补数；图表只连接真实仿真点。
 - 本机 Excel 实测**不支持 MAXIFS/MINIFS**，公式已改用 `LOOKUP` / `SUMPRODUCT` 兼容写法。
-- 扫描 B/C 由恢复的 `../Draft2_sweep.asc` 运行产生；该原理图为**重建版**（网表已验证等价），
-  见 `restore/RESTORE_NOTES.md`。
+- 扫描 B/C 由恢复的 `../Draft2_sweep.asc` **起步**运行；该原理图为**重建版**（网表已验证等价，
+  见 `restore/RESTORE_NOTES.md`）。但运行时的 `.step` 指令是在 LTspice 内存里改的、**没有存盘**：
+  磁盘上那张 `.asc` 至今写着 B 段的 `RB 10k 200k 1k`，而 C 段实际跑的 `.net` 是
+  `RB 1Meg 10Meg 100k`。**要复现某次运行，以 `../runs_archive/` 里对应文件夹的 `.net` 为准**
+  （归档时已逐条比对并记录在 `meta.json` 的 `schematic` 段）。
 
 详细说明（数据来源、判据定义、失效机理、验证结果）见 xlsx 的第一个工作表 `README`。

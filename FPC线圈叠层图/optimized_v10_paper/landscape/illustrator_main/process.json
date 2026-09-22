@@ -1,0 +1,19 @@
+{
+  "source": "optimized_v10_paper\\landscape\\WPT_Exploded_Refined.svg",
+  "groups": 17,
+  "paths": 556,
+  "texts": 23,
+  "delay_ms": 0,
+  "batch_size": 17,
+  "frames": 0,
+  "steps": [
+    {
+      "groups": 17,
+      "paths": 556,
+      "texts": 23
+    }
+  ],
+  "mode": "instant",
+  "target_seconds": null,
+  "actual_construction_seconds": 7.050197399999888
+}

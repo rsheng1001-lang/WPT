@@ -1,0 +1,8 @@
+{
+  "schema": "ltspice-mcp/store",
+  "store_version": 1,
+  "kind": "circuit-index",
+  "job_id": "exp_full-bus-dc_1790056339_d8327a32",
+  "circuit": "D:\\Shared\\LPspice_circuit\\ltspice\\decks\\full_bus_dc.cir",
+  "created_at": "2026-09-22T00:52:19.191768-05:00"
+}

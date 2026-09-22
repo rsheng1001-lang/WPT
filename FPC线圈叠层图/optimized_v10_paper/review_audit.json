@@ -1,0 +1,185 @@
+{
+  "page_mm": [
+    179.9999195522732,
+    134.99994235568576
+  ],
+  "minimum_font_pt": 7.1433000564575195,
+  "raster_images": 0,
+  "inset_components_verified": 32,
+  "all_components_inside_crops": true,
+  "component_checks": [
+    {
+      "side": "L1_TOP",
+      "ref": "R3",
+      "crop_margin_viewbox": 18.33040000000001
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "R2",
+      "crop_margin_viewbox": 18.33040000000001
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C1",
+      "crop_margin_viewbox": 20.88159999999999
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C2",
+      "crop_margin_viewbox": 20.88159999999999
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C3",
+      "crop_margin_viewbox": 20.88159999999999
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C4",
+      "crop_margin_viewbox": 20.88159999999999
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "R1",
+      "crop_margin_viewbox": 51.443200000000004
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "U1",
+      "crop_margin_viewbox": 44.02719999999999
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "D5",
+      "crop_margin_viewbox": 62.4568
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C8",
+      "crop_margin_viewbox": 95.59599999999998
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C5",
+      "crop_margin_viewbox": 97.60240000000002
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C6",
+      "crop_margin_viewbox": 97.60240000000002
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C7",
+      "crop_margin_viewbox": 112.65519999999998
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "D1",
+      "crop_margin_viewbox": 100.58800000000002
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "D2",
+      "crop_margin_viewbox": 100.58800000000002
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C9",
+      "crop_margin_viewbox": 123.93440000000004
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "R4",
+      "crop_margin_viewbox": 92.82559999999998
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "U2",
+      "crop_margin_viewbox": 62.72000000000003
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "D3",
+      "crop_margin_viewbox": 64.72879999999998
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "D4",
+      "crop_margin_viewbox": 64.72879999999998
+    },
+    {
+      "side": "L1_TOP",
+      "ref": "C10",
+      "crop_margin_viewbox": 35.62880000000001
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "C14",
+      "crop_margin_viewbox": 45.001599999999996
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "R8",
+      "crop_margin_viewbox": 45.001599999999996
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "C12",
+      "crop_margin_viewbox": 67.07680000000005
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "R6",
+      "crop_margin_viewbox": 89.15440000000001
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "U3",
+      "crop_margin_viewbox": 60.88960000000003
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "R7",
+      "crop_margin_viewbox": 111.2296
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "C13",
+      "crop_margin_viewbox": 133.30719999999997
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "R5",
+      "crop_margin_viewbox": 133.30719999999997
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "R10",
+      "crop_margin_viewbox": 93.85039999999992
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "Q1",
+      "crop_margin_viewbox": 52.62800000000004
+    },
+    {
+      "side": "L4_BOTTOM",
+      "ref": "R9",
+      "crop_margin_viewbox": 57.545600000000036
+    }
+  ],
+  "min_crop_margin_viewbox": 18.33040000000001,
+  "scale_bars": {
+    "count": 2,
+    "length_mm": 2,
+    "derived_from": "PDF coordinates * 72/25.4 pt/mm * 2.95 orthographic scale * 2.4 inset scale"
+  },
+  "visual_review": [
+    "v7: top inset clipped component; corrected by reducing zoom 3.0 to 2.4",
+    "v7: small annotation text; raised minimum to 14 viewbox units",
+    "v9: native 180x135 mm export and typography checked",
+    "v10: inner-layer copper deepened (copperInner) for legibility at print size; coverlay given a light material gradient",
+    "portrait copied unchanged; landscape source path data preserved"
+  ]
+}

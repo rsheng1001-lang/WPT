@@ -1,0 +1,170 @@
+LTspice 26.0.2 for Windows
+Circuit: D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net
+Start Time: Mon Sep 21 23:22:10 2026
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13740
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13741
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13742
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13743
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13744
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13745
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13746
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13747
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13748
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13749
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net(17): This pin name equals one of the port names of the sub-circuit, but at a different position. This is not a problem, but note that as a result none of the pin names may be used by any .meas expressions.
+X§U2 BONE_N STIM_GATE I_SENSE T2N7002AK_G0_00 ;§pnba 3)1)2
+                                                     ^
+
+.step rb=13750
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 1.080 seconds.
+
+Files loaded:
+D:\Shared\LPspice_circuit\self\bone_sweep_analysis\refine\decks_20260921-232158\r2_3p3V_200uA.net
+C:\Users\Liuxm\AppData\Local\LTspice\lib\sub\Contrib\Toshiba\LVMOS\T2N7002AK_G0_00_enc.lib
+C:\Users\Liuxm\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
+
+Measurement: ibone
+  step	AVG(-I(R_BONE) )	FROM	TO
+     1	0.00019702564896	0.012	0.015
+     2	0.000197013891009	0.012	0.015
+     3	0.000197002125786	0.012	0.015
+     4	0.000196990360566	0.012	0.015
+     5	0.000196978602618	0.012	0.015
+     6	0.000196966844667	0.012	0.015
+     7	0.000196955093997	0.012	0.015
+     8	0.000196943336051	0.012	0.015
+     9	0.000196931578101	0.012	0.015
+    10	0.000196919823741	0.012	0.015
+    11	0.00019690807676	0.012	0.015
+
+Measurement: vbone
+  step	AVG(V(BONE_P,BONE_N) )	FROM	TO
+     1	2.7071323991	0.012	0.015
+     2	2.70716779782	0.012	0.015
+     3	2.70720314978	0.012	0.015
+     4	2.7072385169	0.012	0.015
+     5	2.70727387072	0.012	0.015
+     6	2.70730924605	0.012	0.015
+     7	2.70734459162	0.012	0.015
+     8	2.70737993719	0.012	0.015
+     9	2.7074152529	0.012	0.015
+    10	2.70745062826	0.012	0.015
+    11	2.70748594405	0.012	0.015
+
+Measurement: ierr
+  step	100*abs(IBONE-IREF)/IREF
+     1	1.48717551999
+     2	1.49305449532
+     3	1.49893710678
+     4	1.50481971721
+     5	1.51069869097
+     6	1.51657766627
+     7	1.52245300126
+     8	1.52833197451
+     9	1.53421094929
+    10	1.54008812943
+    11	1.54596161981
+
+Measurement: pass
+  step	if(IERR<=1,1,0)
+     1	0
+     2	0
+     3	0
+     4	0
+     5	0
+     6	0
+     7	0
+     8	0
+     9	0
+    10	0
+    11	0

@@ -1,0 +1,94 @@
+
+========================================================================
+1. Vendor OPAx333 macro-model qualification (unity-gain DC follower)
+========================================================================
+   input sweep 0.1..3.2 V, worst |V(out)-V(in)| = 0.336 uV
+   -> the model's differential behaviour is sound in LTspice.
+
+========================================================================
+2. Current sink operating points (vendor models, ideal rails)
+========================================================================
+    RLOAD      I(R10)  V(I_SENSE)   V(OUTA)  V(BONE_N)   I(R_BONE)
+       1k   99.999 uA    0.299998    2.4798     7.9018   99.782 uA
+      10k   99.999 uA    0.299998    2.4798     7.0038   99.782 uA
+      50k   99.999 uA    0.299998    2.4798     3.0125   99.782 uA
+      65k   99.999 uA    0.299998    2.4798     1.5158   99.782 uA
+
+========================================================================
+3. Compliance curve (behavioural load, .dc continuation from 1k)
+========================================================================
+   regulation holds to RLOAD = 76.73 k, V(BONE_N) = 0.3449 V there
+   so the sink needs ~0.345 V of drain headroom and holds the load
+   voltage up to 7.657 V at 100 uA
+      RLOAD      I(R10)  V(I_SENSE)   V(OUTA)  state
+      9.91k   99.999 uA    0.299998    2.4798  regulating
+     40.10k   99.999 uA    0.299998    2.4798  regulating
+     59.91k   99.999 uA    0.299998    2.4798  regulating
+     69.81k   99.999 uA    0.299998    2.4798  regulating
+     76.24k   99.999 uA    0.299998    2.4798  regulating
+     78.72k   98.203 uA    0.294610    3.2709  saturated
+     80.20k   96.456 uA    0.289369    3.2709  saturated
+     90.10k   86.232 uA    0.258697    3.2710  saturated
+    100.00k   77.978 uA    0.233933    3.2711  saturated
+
+========================================================================
+4. Cold power-up at RLOAD=10k (ideal rails ramped in 1-2 ms, 3 s span)
+========================================================================
+   settled I = 99.782 uA, min 99.782, max 99.782
+   peak over the whole run = 99.814 uA  -> overshoot above the settled value = 0.03 %
+   V(OUTA) stayed within -0.0051 .. 2.4799 V (rails 0..3.3)
+   within +-1% of final after 10.22 ms
+   -> no current overshoot; the gate is only driven after the 3.3 V rail is up.
+   -> heavier loads are not reported: the vendor model's t=0 operating
+      point is already spurious above ~50k, so that transient never advances.
+
+========================================================================
+5. Load step inside the compliant range (60k -> 9.37k at t=5 ms)
+========================================================================
+   settled before/after: 99.782 uA / 99.782 uA
+   peak = 634.3 uA (6.4x nominal) at 0.51 us
+   minimum after step = -0.728 uA
+   excess charge above 100 uA = 0.512 nC
+   deficit charge below 100 uA = 4.361 nC
+   back within +-2% after 37.4 us
+
+========================================================================
+6. Full bus DC sweep 4..16 V (surrogate LDOs and TVS, not vendor models)
+========================================================================
+   V_BUS=  4.00 V  BONE_P= 3.9991 V  +3.3V= 3.3000 V  I_sink=  99.782 uA  I(V_BUS)= -158.799 uA
+   V_BUS=  6.00 V  BONE_P= 5.9991 V  +3.3V= 3.3000 V  I_sink=  99.782 uA  I(V_BUS)= -161.800 uA
+   V_BUS=  8.00 V  BONE_P= 7.9991 V  +3.3V= 3.3000 V  I_sink=  99.782 uA  I(V_BUS)= -164.801 uA
+   V_BUS=  8.50 V  BONE_P= 8.0016 V  +3.3V= 3.3000 V  I_sink=  99.782 uA  I(V_BUS)= -164.805 uA
+   V_BUS= 12.00 V  BONE_P= 8.0016 V  +3.3V= 3.3000 V  I_sink=  99.782 uA  I(V_BUS)= -164.807 uA
+   V_BUS= 16.00 V  BONE_P= 8.0016 V  +3.3V= 3.3000 V  I_sink=  99.782 uA  I(V_BUS)= -164.809 uA
+   at 12 V the bus delivers 164.8 uA total; sink 99.8 uA, the rest is bias (65.0 uA)
+
+========================================================================
+7. Schematics vs netlist decks (the .asc drawings must be the same circuit)
+========================================================================
+   sink_vendor.asc (.op, 10k) vs core_op.cir : worst relative diff 9.68e-09  -> same circuit
+   named nets: bone_n, bone_p, i_sense, i_set, outa, stim_gate, v3v3
+   full_bus.asc (49 sweep points) vs full_bus_dc.cir : worst relative diff 4.58e-07  -> same circuit
+
+   sink_vendor.net vs decks/core_op.cir: 14 elements expected, 14 drawn, 0 difference(s)
+   full_bus.net vs decks/full_bus_dc.cir: 26 elements expected, 26 drawn, 0 difference(s)
+
+========================================================================
+8. Worst-case gate drive, and the TVS surrogate vs the Vishay library
+========================================================================
+   Vth=2.5 V (datasheet max), rail 3.2 V: I= 96.969 uA  V(I_SET)=0.2909  V(I_SENSE)=0.290907  V(OUTA)=2.8167  -> regulating
+   Vth=3.0 V (past the limit), rail 3.2 V: I= 50.483 uA  V(I_SET)=0.2909  V(I_SENSE)=0.151450  V(OUTA)=3.1712  -> NOT regulating
+   -> the setpoint itself is ratiometric to the 3.3 V rail:
+      I_out = V3V3 / (11 * 3k), so a rail error is a current error.
+    V_BUS    surrogate       Vishay
+     12.0     7.513 nA     0.024 nA
+     16.0    10.017 nA     0.032 nA
+     18.0 49543700.589 nA 267534225.619 nA
+     19.0 534980594.419 nA 2094077290.690 nA
+     22.0 1991291275.909 nA 7716265749.283 nA
+   at 12 V the leakage differs by 7.5 nA, i.e. 0.0045 % of the bus current
+   -> DC conclusions unaffected; the clamp knee is NOT interchangeable:
+      surrogate 1 uA at 18.00 V, 1 A at 20.00 V
+      Vishay    1 uA at 17.75 V, 1 A at 18.50 V
+
+All decks re-ran clean; both schematics netlist to the same circuits.

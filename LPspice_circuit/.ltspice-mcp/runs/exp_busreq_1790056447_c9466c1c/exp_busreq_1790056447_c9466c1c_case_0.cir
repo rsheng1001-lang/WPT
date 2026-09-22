@@ -1,0 +1,18 @@
+* TEMPORARY probe: input-side equivalent resistance vs V_BUS.
+* Same netlist as full_bus_dc.cir; sweep runs 16V -> 3V (continuation from
+* the regulating branch downward) so the low-bus dropout region is on the
+* physical solution.
+.include D:\Shared\LPspice_circuit\.ltspice-mcp\runs\exp_busreq_1790056447_c9466c1c\staged\busreq\root-0\ltspice\models\OPAx333.LIB
+.include D:\Shared\LPspice_circuit\.ltspice-mcp\runs\exp_busreq_1790056447_c9466c1c\staged\busreq\root-0\ltspice\models\2N7002_DIODES.lib
+.include D:\Shared\LPspice_circuit\.ltspice-mcp\runs\exp_busreq_1790056447_c9466c1c\staged\busreq\root-0\ltspice\models\APPROX_NOT_VENDOR.lib
+.include D:\Shared\LPspice_circuit\.ltspice-mcp\runs\exp_busreq_1790056447_c9466c1c\staged\busreq\root-0\ltspice\inc\solver.inc
+.include D:\Shared\LPspice_circuit\.ltspice-mcp\runs\exp_busreq_1790056447_c9466c1c\staged\busreq\root-0\ltspice\inc\power.inc
+.include D:\Shared\LPspice_circuit\.ltspice-mcp\runs\exp_busreq_1790056447_c9466c1c\staged\busreq\root-0\ltspice\inc\core.inc
+C5 V_BUS PGND 1u
+C6 V_BUS PGND 100n
+VBUS V_BUS PGND 12
+.param RLOAD=10k
+.dc VBUS 16 3 -0.05
+.save V(V_BUS) V(BONE_P) V(V3V3) V(I_SET) V(I_SENSE) V(BONE_N) V(OUTA) I(R_BONE) I(VBUS) I(R1) I(R4) I(R10)
+.options plotwinsize=0 numdgt=15
+.end

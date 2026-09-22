@@ -1,0 +1,89 @@
+{
+ "basename": "Draft2_sweep",
+ "archived_at": "2026-09-22T19:25:22",
+ "run_mtime": "2026-09-21T22:07:20",
+ "log_sha256": "3af63a98659b93f5b2c26887f1b01dcd8be975a88ce919401e15b6aec143a13a",
+ "files": [
+  {
+   "name": "Draft2_sweep.op.raw",
+   "role": "oppoint",
+   "bytes": 2554,
+   "sha256": "db01df0b037aee82598eeb069b80b4722d6d0ab0777b2eadcdbeab8ead0505e4",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2_sweep.asc",
+   "role": "schematic",
+   "bytes": 3993,
+   "sha256": "220c086ac4889d371ff4653088103acf7f82dbe5180df29c4f0b9269d6889e77",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2_sweep.net",
+   "role": "deck",
+   "bytes": 1369,
+   "sha256": "f960aadb6bfca36201c2645e61f5a2be22f8b8c924258d32f2ac1d8ab0a1b3fe",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2_sweep.log",
+   "role": "log",
+   "bytes": 1763991,
+   "sha256": "3af63a98659b93f5b2c26887f1b01dcd8be975a88ce919401e15b6aec143a13a",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2_sweep.raw",
+   "role": "waveform",
+   "bytes": 448889160,
+   "sha256": "d606b2a142f2493df34ffec245158a162a23db0753e5224568358fa0a6ec54ae",
+   "action": "move"
+  },
+  {
+   "name": "Draft2_sweep.db",
+   "role": "db",
+   "bytes": 507904,
+   "sha256": "56cae0c70fd7970501e3d9cf54278564c687cfabafa685f20f4fce20549cd653",
+   "action": "copy"
+  }
+ ],
+ "sweep": {
+  "signature": "4bf9238bc2",
+  "steps": 2730,
+  "rb_min": 1000000.0,
+  "rb_max": 10000000.0,
+  "rb_n": 91,
+  "rb_step": 100000.0,
+  "vbp": [
+   3.3,
+   5.0,
+   8.0,
+   10.0,
+   12.0,
+   15.0
+  ],
+  "iref_uA": [
+   10.0,
+   20.0,
+   50.0,
+   100.0,
+   200.0
+  ],
+  "pass1_at_1.5pct": 8,
+  "pass1_log1pct": 0,
+  "manifest_sweep": 3,
+  "log_matches_manifest_sha256": true,
+  "directive_hint": [
+   ".step param IREF list 10u 20u 50u 100u 200u",
+   ".step param RB 1Meg 10Meg 100k",
+   ".step param VBP list 3.3 5 8 10 12 15"
+  ]
+ },
+ "schematic": {
+  "same_name": "Draft2_sweep.asc",
+  "same_name_directives_match_deck": false,
+  "matching_schematic": null,
+  "note": "指令级比对（.step/.param/.tran/.meas），非电路等价性证明"
+ },
+ "criterion_pct": 1.5
+}

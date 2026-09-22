@@ -1,0 +1,30 @@
+[
+  {
+    "file": "WPT_Exploded_Refined",
+    "paths": 357,
+    "texts": 18,
+    "layers": [
+      "BACKGROUND",
+      "TITLE",
+      "BOTTOM_COMPONENTS",
+      "BOTTOM_COVERLAY",
+      "L4_BOTTOM_COPPER",
+      "DIELECTRIC_2",
+      "L3_POWER",
+      "CORE",
+      "L2_GND",
+      "DIELECTRIC_1",
+      "L1_TOP_COPPER",
+      "TOP_COVERLAY",
+      "TOP_COMPONENTS",
+      "ANNOTATIONS",
+      "FIGURE_NOTES"
+    ],
+    "raster": 0,
+    "placed": 0,
+    "clipped_text": 0,
+    "coverlay_layers": 2,
+    "coverlay_order_verified": true,
+    "reference_designators_drawn": false
+  }
+]

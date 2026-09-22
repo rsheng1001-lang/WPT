@@ -1,0 +1,37 @@
+* USER-CREATED APPROXIMATIONS, NOT MANUFACTURER MODELS.
+* For connectivity/DC feasibility only, NOT LDO stability/startup/OVP qualification.
+* No thermal shutdown, damage, process corners, reverse-current protection or validated PSRR.
+* ST715: 1.2V reference; 3.8uA Iq; 5.88ohm dropout surrogate (0.5V/85mA).
+* 0.10A current cap is an ASSUMPTION, not a guaranteed short-circuit current.
+* 100k loop gain and 1us pole are numerical assumptions, not measured bandwidth.
+.subckt ST715_APPROX IN OUT GND FB
+BREF REF GND V=1.2*limit(V(IN,GND)/2.5,0,1)
+BERR ERR GND V=limit(1e5*(V(REF,GND)-V(FB,GND)),0,1)
+RP ERR CTRL 1k
+CP CTRL GND 1n
+BPASS IN OUT I=limit(V(CTRL,GND),0,1)*limit(V(IN,OUT)/5.88,0,0.10)
+BIQ IN GND I=3.8u*limit(V(IN,GND)/2.5,0,1)
+RFB FB GND 1T
+.ends ST715_APPROX
+* MCP1703A 3.3V surrogate: typical 2uA Iq, 2.1ohm dropout (525mV/250mA).
+* Numerical dynamics unvalidated; current cap 0.30A is an assumption.
+.subckt MCP1703A33_APPROX IN OUT GND
+BREF REF GND V=3.3*limit(V(IN,GND)/2.7,0,1)
+BERR ERR GND V=limit(1e5*(V(REF,GND)-V(OUT,GND)),0,1)
+RP ERR CTRL 1k
+CP CTRL GND 1n
+BPASS IN OUT I=limit(V(CTRL,GND),0,1)*limit(V(IN,OUT)/2.1,0,0.30)
+BIQ IN GND I=2u*limit(V(IN,GND)/2.7,0,1)
+.ends MCP1703A33_APPROX
+* VESD16C1-02V approximate avalanche branch.
+* Typical points 17.9V at 1mA, 25.3V at 3.6A => avalanche slope ~2.06ohm.
+* NOT a validated ESD model. Forward branch/capacitance/leakage are approximate.
+.subckt VESD16_APPROX K A
+BAV K A I=max((V(K,A)-17.89794)/2.06,0)
+DF A K FORWARD_ESD
+CJ K A 27p
+RL K A 1.6G
+.model FORWARD_ESD D(Is=1p N=1.3 Rs=0.15)
+.ends VESD16_APPROX
+* LTspice standard.dio: 1N5819 from OnSemi; same-family surrogate, NOT exact WS model.
+.model D1N5819_PROXY D(Is=31.7u Rs=.051 N=1.373 Cjo=110p M=.35 Eg=.69 Xti=2)

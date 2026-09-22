@@ -1,0 +1,118 @@
+LTspice 26.0.2 for Windows
+Circuit: D:\Shared\输出端原理图\ltspice\decks\tvs_compare.cir
+Start Time: Mon Sep 21 16:13:11 2026
+Options:plotwinsize=0 numdgt=7
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+.OP point found by inspection.
+.step V_B=0 
+.step V_B=0.25 
+.step V_B=0.5 
+.step V_B=0.75 
+.step V_B=1 
+.step V_B=1.25 
+.step V_B=1.5 
+.step V_B=1.75 
+.step V_B=2 
+.step V_B=2.25 
+.step V_B=2.5 
+.step V_B=2.75 
+.step V_B=3 
+.step V_B=3.25 
+.step V_B=3.5 
+.step V_B=3.75 
+.step V_B=4 
+.step V_B=4.25 
+.step V_B=4.5 
+.step V_B=4.75 
+.step V_B=5 
+.step V_B=5.25 
+.step V_B=5.5 
+.step V_B=5.75 
+.step V_B=6 
+.step V_B=6.25 
+.step V_B=6.5 
+.step V_B=6.75 
+.step V_B=7 
+.step V_B=7.25 
+.step V_B=7.5 
+.step V_B=7.75 
+.step V_B=8 
+.step V_B=8.25 
+.step V_B=8.5 
+.step V_B=8.75 
+.step V_B=9 
+.step V_B=9.25 
+.step V_B=9.5 
+.step V_B=9.75 
+.step V_B=10 
+.step V_B=10.25 
+.step V_B=10.5 
+.step V_B=10.75 
+.step V_B=11 
+.step V_B=11.25 
+.step V_B=11.5 
+.step V_B=11.75 
+.step V_B=12 
+.step V_B=12.25 
+.step V_B=12.5 
+.step V_B=12.75 
+.step V_B=13 
+.step V_B=13.25 
+.step V_B=13.5 
+.step V_B=13.75 
+.step V_B=14 
+.step V_B=14.25 
+.step V_B=14.5 
+.step V_B=14.75 
+.step V_B=15 
+.step V_B=15.25 
+.step V_B=15.5 
+.step V_B=15.75 
+.step V_B=16 
+.step V_B=16.25 
+.step V_B=16.5 
+.step V_B=16.75 
+.step V_B=17 
+.step V_B=17.25 
+.step V_B=17.5 
+.step V_B=17.75 
+.step V_B=18 
+.step V_B=18.25 
+.step V_B=18.5 
+.step V_B=18.75 
+.step V_B=19 
+.step V_B=19.25 
+.step V_B=19.5 
+.step V_B=19.75 
+.step V_B=20 
+.step V_B=20.25 
+.step V_B=20.5 
+.step V_B=20.75 
+.step V_B=21 
+.step V_B=21.25 
+.step V_B=21.5 
+.step V_B=21.75 
+.step V_B=22 
+.step V_B=22.25 
+.step V_B=22.5 
+.step V_B=22.75 
+.step V_B=23 
+.step V_B=23.25 
+.step V_B=23.5 
+.step V_B=23.75 
+.step V_B=24 
+.step V_B=24.25 
+.step V_B=24.5 
+.step V_B=24.75 
+.step V_B=25 
+Total elapsed time: 1.302 seconds.
+
+Files loaded:
+D:\Shared\输出端原理图\ltspice\decks\tvs_compare.cir
+D:\Shared\输出端原理图\ltspice\models\APPROX_NOT_VENDOR.lib
+D:\Shared\输出端原理图\vendor\vishay\86547SPICE_Vishay_VESD01C1-HD1-to-VESD33C1-HD1.LIB
+

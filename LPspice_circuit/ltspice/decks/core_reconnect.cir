@@ -1,0 +1,28 @@
+* Load step at the regulating operating point: 60k -> 60k||11.1k (9.37k) at
+* t=5ms. Answers whether the loop stays damped on a load step and how large
+* the current excursion is. The switch is a TEST FIXTURE, so are the supplies.
+* Supplies hold their final value from t=0 on purpose: the t=0 operating point
+* is then the real one, including the macro-model's internal reference. A
+* cold-start ramp would need seconds for that 5uF/1MEG node to establish.
+* The load starts at 60k, a point whose cold .op the vendor model solves
+* correctly; the out-of-compliance start instead parks the model's rail
+* saturation, where LTspice's timestep collapses and the run never advances.
+.include ../models/OPAx333.LIB
+.include ../models/2N7002_DIODES.lib
+.include ../inc/solver.inc
+.include ../inc/sink.inc
+V8 BONE_P 0 8.0016
+V33 V3V3 0 3.3
+SW1 BONE_P NSTEP CTRL 0 STEP
+RB NSTEP BONE_N 11.111111111k
+VCTRL CTRL 0 PULSE(0 1 5m 1u 1u 1 20m)
+.model STEP SW(Ron=0.01 Roff=1T Vt=0.5 Vh=0.01)
+R_BONE BONE_P BONE_N 60k
+.tran 0 25m 0 1u
+.save V(BONE_N) V(I_SENSE) V(OUTA) V(STIM_GATE) I(R_BONE) I(RB)
+.meas tran I_BEFORE AVG (I(R_BONE)) FROM 4.5m TO 5m
+.meas tran I_PEAK MAX (I(R_BONE)+I(RB)) FROM 5m TO 10m
+.meas tran I_MIN MIN (I(R_BONE)+I(RB)) FROM 5m TO 10m
+.meas tran I_AFTER AVG (I(R_BONE)+I(RB)) FROM 20m TO 25m
+.options plotwinsize=0 numdgt=7
+.end

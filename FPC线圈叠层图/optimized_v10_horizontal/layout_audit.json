@@ -1,0 +1,124 @@
+{
+  "source": "optimized_v10",
+  "style": "horizontal (portrait rotated -90 degrees)",
+  "layer_order_left_to_right": [
+    "TOP_COMPONENTS",
+    "TOP_COVERLAY",
+    "L1_TOP_COPPER",
+    "DIELECTRIC_1",
+    "L2_GND",
+    "CORE",
+    "L3_POWER",
+    "DIELECTRIC_2",
+    "L4_BOTTOM_COPPER",
+    "BOTTOM_COVERLAY",
+    "BOTTOM_COMPONENTS"
+  ],
+  "viewbox": [
+    794.0,
+    463.48048000000006
+  ],
+  "export_width_mm": 180.0,
+  "canvas_mm": [
+    180.0,
+    105.07
+  ],
+  "layer_pitch_pt": 68.0,
+  "lane_y_pt": 188.74024000000003,
+  "label_size_pt": 12.0,
+  "sublabel_size_pt": 11.0,
+  "minimum_font_pt": 7.068763759693767,
+  "geometry": {
+    "BOTTOM_COMPONENTS": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 727.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 1105
+    },
+    "BOTTOM_COVERLAY": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 659.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 1003
+    },
+    "L4_BOTTOM_COPPER": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 591.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 901
+    },
+    "DIELECTRIC_2": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 523.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 799
+    },
+    "L3_POWER": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 455.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 697
+    },
+    "CORE": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 387.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 595
+    },
+    "L2_GND": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 319.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 493
+    },
+    "DIELECTRIC_1": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 251.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 391
+    },
+    "L1_TOP_COPPER": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 183.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 289
+    },
+    "TOP_COVERLAY": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 115.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 187
+    },
+    "TOP_COMPONENTS": {
+      "path_data_unchanged": true,
+      "rotation_deg": -90,
+      "artwork_scale": 0.68,
+      "column_x": 47.0,
+      "lane_y": 188.74024000000003,
+      "source_center_pt": 85
+    }
+  },
+  "text_upright": true,
+  "label_rows": 2,
+  "notes": "artwork path data copied unchanged; only station placement and text are new"
+}

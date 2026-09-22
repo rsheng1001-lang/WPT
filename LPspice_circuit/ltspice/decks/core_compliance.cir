@@ -1,0 +1,18 @@
+* Compliance curve for the current sink. The load is a behavioural resistor
+* driven by VCTRL so .dc can sweep it continuously from 1k to 100k; the
+* continuation from the light-load regulating branch keeps every point on the
+* physical solution, where a cold .op at the same loads lands on a spurious
+* branch of the macro-model.
+* Supplies are ideal TEST FIXTURES; see sink.inc for the sink itself.
+.include ../models/OPAx333.LIB
+.include ../models/2N7002_DIODES.lib
+.include ../inc/solver.inc
+.include ../inc/sink.inc
+V8 BONE_P 0 8.0016
+V33 V3V3 0 3.3
+VCTRL CTRL 0 0
+R_BONE BONE_P BONE_N R={1k + V(CTRL)*99k}
+.dc VCTRL 0 1 0.005
+.save V(BONE_P) V(BONE_N) V(I_SET) V(I_SENSE) V(OUTA) V(STIM_GATE) I(R_BONE) I(R10)
+.options plotwinsize=0 numdgt=7
+.end

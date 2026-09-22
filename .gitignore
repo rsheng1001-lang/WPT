@@ -1,0 +1,17 @@
+# GitHub 单文件 100MB 上限，*.raw 波形文件太大不进库
+*.raw
+*.op.raw
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+# LTspice MCP 锁文件
+.ltspice-mcp/locks/
+*.lock
+# 独立仓库，不并入 WPT（另有 origin: Ran-sh/Coil_FPC）
+Coil/
+# 编辑器/系统
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp

@@ -1,0 +1,119 @@
+{
+  "origin_pt": [
+    41.72047663471414,
+    41.72411152002739
+  ],
+  "registration_votes": 23,
+  "chip_pairs_matched": 23,
+  "chip_fit_max_error_mm": 0.0003556655249030629,
+  "old_origin_pt": [
+    38.85,
+    38.85
+  ],
+  "old_to_new_shift_mm": [
+    1.0126403683574872,
+    1.013922675120774
+  ],
+  "components": 32,
+  "cutouts": 8,
+  "tilt": 0.32,
+  "scale": 4.45,
+  "copper_layers": {
+    "L1_TOP": {
+      "polylines": 74,
+      "fills": 121
+    },
+    "L2_GND": {
+      "polylines": 8,
+      "fills": 20
+    },
+    "L3_POWER": {
+      "polylines": 11,
+      "fills": 22
+    },
+    "L4_BOTTOM": {
+      "polylines": 55,
+      "fills": 80
+    }
+  },
+  "coverlay": {
+    "TOP_COVERLAY": {
+      "source": "L1_TOP",
+      "pad_candidates": 102,
+      "excluded_via_markers": 19,
+      "merged_window_regions": 24,
+      "expansion_mm": 0.1,
+      "derived": true,
+      "nominal_pi_um": 12.5,
+      "nominal_adhesive_um": 15,
+      "opacity": 1.0,
+      "window_area_mm2": 54.15836900906329,
+      "remaining_film_area_mm2": 381.744803388344,
+      "valid": true,
+      "window_overlap_area_mm2": 0.0
+    },
+    "BOTTOM_COVERLAY": {
+      "source": "L4_BOTTOM",
+      "pad_candidates": 61,
+      "excluded_via_markers": 19,
+      "merged_window_regions": 15,
+      "expansion_mm": 0.1,
+      "derived": true,
+      "nominal_pi_um": 12.5,
+      "nominal_adhesive_um": 15,
+      "opacity": 1.0,
+      "window_area_mm2": 19.483495972030852,
+      "remaining_film_area_mm2": 416.41967642537634,
+      "valid": true,
+      "window_overlap_area_mm2": 0.0
+    }
+  },
+  "stack_top_to_bottom": [
+    "TOP_COMPONENTS",
+    "TOP_COVERLAY",
+    "L1_TOP_COPPER",
+    "DIELECTRIC_1",
+    "L2_GND",
+    "CORE",
+    "L3_POWER",
+    "DIELECTRIC_2",
+    "L4_BOTTOM_COPPER",
+    "BOTTOM_COVERLAY",
+    "BOTTOM_COMPONENTS"
+  ],
+  "reference_designators_drawn": false,
+  "outline_source": "data/outline_contours.json",
+  "coverlay_color": "#E6DFC7",
+  "figure_version": "v5",
+  "data_comparison": {
+    "components_registered.json": {
+      "sha256": "0e7bd812066a1df8e6be160076097f0a4753f93b6f3391d5f9517ab21be748c3",
+      "baseline": "recorded from this build"
+    },
+    "TOP_COVERLAY_windows.json": {
+      "sha256": "b01f097578d491a4517b925631cf06a6efcec54e8089c36f664dbc7867684110",
+      "baseline": "recorded from this build"
+    },
+    "BOTTOM_COVERLAY_windows.json": {
+      "sha256": "0d6a2fe8865043d0f828f899a46efe64147db19fcecbae83ce3cc2a854232394",
+      "baseline": "recorded from this build"
+    }
+  },
+  "layer_pitch_pt": 102,
+  "layer_centers_pt": {
+    "TOP_COMPONENTS": 85,
+    "TOP_COVERLAY": 187,
+    "L1_TOP_COPPER": 289,
+    "DIELECTRIC_1": 391,
+    "L2_GND": 493,
+    "CORE": 595,
+    "L3_POWER": 697,
+    "DIELECTRIC_2": 799,
+    "L4_BOTTOM_COPPER": 901,
+    "BOTTOM_COVERLAY": 1003,
+    "BOTTOM_COMPONENTS": 1105
+  },
+  "visual_window_backing_color": "#F6F4EB",
+  "main_window_treatment": "exact film geometry with removable low-contrast visual backing; no window-edge strokes",
+  "detail_window_treatment": "complete true cut-outs, no backing"
+}

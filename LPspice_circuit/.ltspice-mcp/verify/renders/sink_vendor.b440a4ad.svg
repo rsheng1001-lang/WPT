@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="104 381 1388 927" width="1388" height="927">
+<title>sink_vendor.asc</title>
+<style>.bg { fill: #ffffff; }
+.wire { stroke: #0a4bd8; stroke-width: 1.5; fill: none; }
+.sym { stroke: #111111; stroke-width: 1.5; fill: none; }
+.pin { stroke: #b00020; stroke-width: 1; fill: none; }
+.gnd { stroke: #0a4bd8; stroke-width: 1.5; fill: none; }
+.unconnected { stroke: #0a4bd8; stroke-width: 1; fill: none; }
+text { font-family: 'DejaVu Sans Mono', monospace; }
+.t-attr { fill: #101010; }
+.t-flag { fill: #0a4bd8; }
+.t-directive { fill: #106010; }
+.t-comment { fill: #505050; }
+.t-placeholder { fill: #b00020; }
+.missing { stroke: #b00020; stroke-width: 1.5; stroke-dasharray: 4 3; fill: none; }</style>
+<rect class="bg" x="104" y="381" width="1388" height="927"/>
+<line class="wire" x1="328" y1="492" x2="328" y2="556"/>
+<line class="wire" x1="328" y1="556" x2="456" y2="556"/>
+<line class="wire" x1="456" y1="556" x2="456" y2="556"/>
+<line class="wire" x1="536" y1="556" x2="568" y2="556"/>
+<line class="wire" x1="568" y1="556" x2="568" y2="604"/>
+<line class="wire" x1="152" y1="412" x2="328" y2="412"/>
+<line class="wire" x1="328" y1="412" x2="328" y2="412"/>
+<line class="wire" x1="648" y1="700" x2="632" y2="700"/>
+<line class="wire" x1="712" y1="684" x2="760" y2="684"/>
+<line class="wire" x1="760" y1="684" x2="792" y2="684"/>
+<line class="wire" x1="760" y1="652" x2="760" y2="684"/>
+<line class="wire" x1="792" y1="684" x2="792" y2="748"/>
+<line class="wire" x1="792" y1="812" x2="792" y2="924"/>
+<line class="wire" x1="840" y1="652" x2="904" y2="652"/>
+<line class="wire" x1="904" y1="652" x2="904" y2="700"/>
+<line class="wire" x1="904" y1="700" x2="1000" y2="700"/>
+<line class="wire" x1="1000" y1="700" x2="1000" y2="764"/>
+<line class="wire" x1="1000" y1="844" x2="1000" y2="924"/>
+<line class="wire" x1="1048" y1="716" x2="1048" y2="924"/>
+<line class="wire" x1="648" y1="668" x2="584" y2="668"/>
+<line class="wire" x1="584" y1="668" x2="584" y2="924"/>
+<line class="wire" x1="584" y1="924" x2="792" y2="924"/>
+<line class="wire" x1="792" y1="924" x2="888" y2="924"/>
+<line class="wire" x1="888" y1="924" x2="1000" y2="924"/>
+<line class="wire" x1="1000" y1="924" x2="1048" y2="924"/>
+<line class="wire" x1="1240" y1="412" x2="1400" y2="412"/>
+<line class="wire" x1="1240" y1="492" x2="1240" y2="540"/>
+<line class="wire" x1="1240" y1="540" x2="1048" y2="540"/>
+<line class="wire" x1="1048" y1="540" x2="1048" y2="620"/>
+<line class="sym" x1="328" y1="484" x2="328" y2="492"/>
+<line class="sym" x1="312" y1="476" x2="328" y2="484"/>
+<line class="sym" x1="344" y1="460" x2="312" y2="476"/>
+<line class="sym" x1="312" y1="444" x2="344" y2="460"/>
+<line class="sym" x1="344" y1="428" x2="312" y2="444"/>
+<line class="sym" x1="328" y1="412" x2="328" y2="420"/>
+<line class="sym" x1="328" y1="420" x2="344" y2="428"/>
+<circle class="pin" cx="328" cy="412" r="1.5"/>
+<circle class="pin" cx="328" cy="492" r="1.5"/>
+<line class="sym" x1="328" y1="628" x2="328" y2="636"/>
+<line class="sym" x1="312" y1="620" x2="328" y2="628"/>
+<line class="sym" x1="344" y1="604" x2="312" y2="620"/>
+<line class="sym" x1="312" y1="588" x2="344" y2="604"/>
+<line class="sym" x1="344" y1="572" x2="312" y2="588"/>
+<line class="sym" x1="328" y1="556" x2="328" y2="564"/>
+<line class="sym" x1="328" y1="564" x2="344" y2="572"/>
+<circle class="pin" cx="328" cy="556" r="1.5"/>
+<circle class="pin" cx="328" cy="636" r="1.5"/>
+<line class="sym" x1="464" y1="556" x2="456" y2="556"/>
+<line class="sym" x1="472" y1="540" x2="464" y2="556"/>
+<line class="sym" x1="488" y1="572" x2="472" y2="540"/>
+<line class="sym" x1="504" y1="540" x2="488" y2="572"/>
+<line class="sym" x1="520" y1="572" x2="504" y2="540"/>
+<line class="sym" x1="536" y1="556" x2="528" y2="556"/>
+<line class="sym" x1="528" y1="556" x2="520" y2="572"/>
+<circle class="pin" cx="536" cy="556" r="1.5"/>
+<circle class="pin" cx="456" cy="556" r="1.5"/>
+<line class="sym" x1="568" y1="640" x2="568" y2="668"/>
+<line class="sym" x1="568" y1="632" x2="568" y2="604"/>
+<line class="sym" x1="552" y1="632" x2="584" y2="632"/>
+<line class="sym" x1="552" y1="640" x2="584" y2="640"/>
+<circle class="pin" cx="568" cy="604" r="1.5"/>
+<circle class="pin" cx="568" cy="668" r="1.5"/>
+<line class="sym" x1="144" y1="432" x2="160" y2="432"/>
+<line class="sym" x1="144" y1="472" x2="160" y2="472"/>
+<line class="sym" x1="152" y1="424" x2="152" y2="440"/>
+<line class="sym" x1="152" y1="492" x2="152" y2="484"/>
+<line class="sym" x1="152" y1="412" x2="152" y2="420"/>
+<ellipse class="sym" cx="152" cy="452" rx="32" ry="32"/>
+<circle class="pin" cx="152" cy="412" r="1.5"/>
+<circle class="pin" cx="152" cy="492" r="1.5"/>
+<line class="sym" x1="648" y1="652" x2="712" y2="684"/>
+<line class="sym" x1="648" y1="716" x2="712" y2="684"/>
+<line class="sym" x1="648" y1="652" x2="648" y2="716"/>
+<line class="sym" x1="652" y1="668" x2="660" y2="668"/>
+<line class="sym" x1="652" y1="700" x2="660" y2="700"/>
+<line class="sym" x1="656" y1="704" x2="656" y2="696"/>
+<line class="sym" x1="680" y1="652" x2="680" y2="668"/>
+<line class="sym" x1="680" y1="716" x2="680" y2="700"/>
+<line class="sym" x1="684" y1="664" x2="692" y2="664"/>
+<line class="sym" x1="688" y1="660" x2="688" y2="668"/>
+<line class="sym" x1="684" y1="704" x2="692" y2="704"/>
+<circle class="pin" cx="648" cy="700" r="1.5"/>
+<circle class="pin" cx="648" cy="668" r="1.5"/>
+<circle class="pin" cx="680" cy="652" r="1.5"/>
+<circle class="pin" cx="680" cy="716" r="1.5"/>
+<circle class="pin" cx="712" cy="684" r="1.5"/>
+<line class="sym" x1="792" y1="496" x2="792" y2="524"/>
+<line class="sym" x1="792" y1="488" x2="792" y2="460"/>
+<line class="sym" x1="776" y1="488" x2="808" y2="488"/>
+<line class="sym" x1="776" y1="496" x2="808" y2="496"/>
+<circle class="pin" cx="792" cy="460" r="1.5"/>
+<circle class="pin" cx="792" cy="524" r="1.5"/>
+<line class="sym" x1="768" y1="652" x2="760" y2="652"/>
+<line class="sym" x1="776" y1="636" x2="768" y2="652"/>
+<line class="sym" x1="792" y1="668" x2="776" y2="636"/>
+<line class="sym" x1="808" y1="636" x2="792" y2="668"/>
+<line class="sym" x1="824" y1="668" x2="808" y2="636"/>
+<line class="sym" x1="840" y1="652" x2="832" y2="652"/>
+<line class="sym" x1="832" y1="652" x2="824" y2="668"/>
+<circle class="pin" cx="840" cy="652" r="1.5"/>
+<circle class="pin" cx="760" cy="652" r="1.5"/>
+<line class="sym" x1="792" y1="784" x2="792" y2="812"/>
+<line class="sym" x1="792" y1="776" x2="792" y2="748"/>
+<line class="sym" x1="776" y1="776" x2="808" y2="776"/>
+<line class="sym" x1="776" y1="784" x2="808" y2="784"/>
+<circle class="pin" cx="792" cy="748" r="1.5"/>
+<circle class="pin" cx="792" cy="812" r="1.5"/>
+<line class="sym" x1="1048" y1="668" x2="1048" y2="716"/>
+<line class="sym" x1="1016" y1="700" x2="1048" y2="700"/>
+<line class="sym" x1="1040" y1="668" x2="1048" y2="668"/>
+<line class="sym" x1="1016" y1="668" x2="1040" y2="664"/>
+<line class="sym" x1="1016" y1="668" x2="1040" y2="672"/>
+<line class="sym" x1="1040" y1="664" x2="1040" y2="672"/>
+<line class="sym" x1="1016" y1="628" x2="1016" y2="644"/>
+<line class="sym" x1="1016" y1="660" x2="1016" y2="676"/>
+<line class="sym" x1="1016" y1="692" x2="1016" y2="708"/>
+<line class="sym" x1="1000" y1="700" x2="1008" y2="700"/>
+<line class="sym" x1="1008" y1="636" x2="1008" y2="700"/>
+<line class="sym" x1="1048" y1="636" x2="1016" y2="636"/>
+<line class="sym" x1="1048" y1="620" x2="1048" y2="636"/>
+<circle class="pin" cx="1048" cy="620" r="1.5"/>
+<circle class="pin" cx="1000" cy="700" r="1.5"/>
+<circle class="pin" cx="1048" cy="716" r="1.5"/>
+<line class="sym" x1="1000" y1="836" x2="1000" y2="844"/>
+<line class="sym" x1="984" y1="828" x2="1000" y2="836"/>
+<line class="sym" x1="1016" y1="812" x2="984" y2="828"/>
+<line class="sym" x1="984" y1="796" x2="1016" y2="812"/>
+<line class="sym" x1="1016" y1="780" x2="984" y2="796"/>
+<line class="sym" x1="1000" y1="764" x2="1000" y2="772"/>
+<line class="sym" x1="1000" y1="772" x2="1016" y2="780"/>
+<circle class="pin" cx="1000" cy="764" r="1.5"/>
+<circle class="pin" cx="1000" cy="844" r="1.5"/>
+<line class="sym" x1="888" y1="996" x2="888" y2="1004"/>
+<line class="sym" x1="872" y1="988" x2="888" y2="996"/>
+<line class="sym" x1="904" y1="972" x2="872" y2="988"/>
+<line class="sym" x1="872" y1="956" x2="904" y2="972"/>
+<line class="sym" x1="904" y1="940" x2="872" y2="956"/>
+<line class="sym" x1="888" y1="924" x2="888" y2="932"/>
+<line class="sym" x1="888" y1="932" x2="904" y2="940"/>
+<circle class="pin" cx="888" cy="924" r="1.5"/>
+<circle class="pin" cx="888" cy="1004" r="1.5"/>
+<line class="sym" x1="1240" y1="484" x2="1240" y2="492"/>
+<line class="sym" x1="1224" y1="476" x2="1240" y2="484"/>
+<line class="sym" x1="1256" y1="460" x2="1224" y2="476"/>
+<line class="sym" x1="1224" y1="444" x2="1256" y2="460"/>
+<line class="sym" x1="1256" y1="428" x2="1224" y2="444"/>
+<line class="sym" x1="1240" y1="412" x2="1240" y2="420"/>
+<line class="sym" x1="1240" y1="420" x2="1256" y2="428"/>
+<circle class="pin" cx="1240" cy="412" r="1.5"/>
+<circle class="pin" cx="1240" cy="492" r="1.5"/>
+<line class="sym" x1="1392" y1="432" x2="1408" y2="432"/>
+<line class="sym" x1="1392" y1="472" x2="1408" y2="472"/>
+<line class="sym" x1="1400" y1="424" x2="1400" y2="440"/>
+<line class="sym" x1="1400" y1="492" x2="1400" y2="484"/>
+<line class="sym" x1="1400" y1="412" x2="1400" y2="420"/>
+<ellipse class="sym" cx="1400" cy="452" rx="32" ry="32"/>
+<circle class="pin" cx="1400" cy="412" r="1.5"/>
+<circle class="pin" cx="1400" cy="492" r="1.5"/>
+<text class="t-flag" x="571" y="608" text-anchor="end" font-size="11" transform="rotate(-90,571,608)">I_SET</text>
+<polygon class="gnd" points="562,668 574,668 568,678"/>
+<polygon class="gnd" points="322,636 334,636 328,646"/>
+<polygon class="gnd" points="146,492 158,492 152,502"/>
+<text class="t-flag" x="272" y="408" text-anchor="middle" font-size="11">V3V3</text>
+<text class="t-flag" x="628" y="703" text-anchor="end" font-size="11">I_SET</text>
+<text class="t-flag" x="680" y="648" text-anchor="middle" font-size="11">V3V3</text>
+<polygon class="gnd" points="674,716 686,716 680,726"/>
+<text class="t-flag" x="792" y="456" text-anchor="middle" font-size="11">V3V3</text>
+<polygon class="gnd" points="786,524 798,524 792,534"/>
+<text class="t-flag" x="728" y="680" text-anchor="middle" font-size="11">OUTA</text>
+<rect class="unconnected" x="1014" y="698" width="4" height="4"/>
+<text class="t-flag" x="1016" y="696" text-anchor="middle" font-size="11">STIM_GATE</text>
+<text class="t-flag" x="1052" y="563" text-anchor="start" font-size="11">BONE_N</text>
+<polygon class="gnd" points="882,1004 894,1004 888,1014"/>
+<text class="t-flag" x="600" y="920" text-anchor="middle" font-size="11">I_SENSE</text>
+<polygon class="gnd" points="1394,492 1406,492 1400,502"/>
+<text class="t-flag" x="1320" y="408" text-anchor="middle" font-size="11">BONE_P</text>
+<text class="t-attr" x="348" y="436" text-anchor="start" font-size="14">R5</text>
+<text class="t-attr" x="348" y="472" text-anchor="start" font-size="14">100k</text>
+<text class="t-attr" x="348" y="580" text-anchor="start" font-size="14">R7</text>
+<text class="t-attr" x="348" y="616" text-anchor="start" font-size="14">10k</text>
+<text class="t-attr" x="512" y="576" text-anchor="end" font-size="14" transform="rotate(-90,512,576)">R6</text>
+<text class="t-attr" x="476" y="576" text-anchor="end" font-size="14" transform="rotate(-90,476,576)">10k</text>
+<text class="t-attr" x="576" y="612" text-anchor="start" font-size="14">C12</text>
+<text class="t-attr" x="576" y="660" text-anchor="start" font-size="14">100n</text>
+<text class="t-attr" x="176" y="412" text-anchor="start" font-size="14">V33</text>
+<text class="t-attr" x="176" y="492" text-anchor="start" font-size="14">3.3</text>
+<text class="t-attr" x="696" y="652" text-anchor="start" font-size="14">U3</text>
+<text class="t-attr" x="696" y="716" text-anchor="start" font-size="14">OPAx333</text>
+<text class="t-attr" x="800" y="468" text-anchor="start" font-size="14">C13</text>
+<text class="t-attr" x="800" y="516" text-anchor="start" font-size="14">100n</text>
+<text class="t-attr" x="816" y="672" text-anchor="end" font-size="14" transform="rotate(-90,816,672)">R8</text>
+<text class="t-attr" x="780" y="672" text-anchor="end" font-size="14" transform="rotate(-90,780,672)">10k</text>
+<text class="t-attr" x="800" y="756" text-anchor="start" font-size="14">C14</text>
+<text class="t-attr" x="800" y="804" text-anchor="start" font-size="14">100p</text>
+<text class="t-attr" x="1056" y="652" text-anchor="start" font-size="14">Q1</text>
+<text class="t-attr" x="1056" y="692" text-anchor="start" font-size="14">N7002</text>
+<text class="t-attr" x="1020" y="788" text-anchor="start" font-size="14">R9</text>
+<text class="t-attr" x="1020" y="824" text-anchor="start" font-size="14">10Meg</text>
+<text class="t-attr" x="908" y="948" text-anchor="start" font-size="14">R10</text>
+<text class="t-attr" x="908" y="984" text-anchor="start" font-size="14">3k</text>
+<text class="t-attr" x="1260" y="436" text-anchor="start" font-size="14">R_BONE</text>
+<text class="t-attr" x="1260" y="472" text-anchor="start" font-size="14">10k</text>
+<text class="t-attr" x="1424" y="412" text-anchor="start" font-size="14">V8</text>
+<text class="t-attr" x="1424" y="492" text-anchor="start" font-size="14">8.0016</text>
+<text class="t-directive" x="200" y="1160" text-anchor="start" font-size="14"><tspan x="200" dy="0">.include models/OPAx333.LIB</tspan></text>
+<text class="t-directive" x="200" y="1192" text-anchor="start" font-size="14"><tspan x="200" dy="0">.include models/2N7002_DIODES.lib</tspan></text>
+<text class="t-directive" x="200" y="1224" text-anchor="start" font-size="14"><tspan x="200" dy="0">.include solver.inc</tspan></text>
+<text class="t-directive" x="200" y="1256" text-anchor="start" font-size="14"><tspan x="200" dy="0">.op</tspan></text>
+<text class="t-directive" x="200" y="1288" text-anchor="start" font-size="14"><tspan x="200" dy="0">.options plotwinsize=0 numdgt=7</tspan></text>
+</svg>

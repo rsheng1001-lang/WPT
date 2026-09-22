@@ -1,0 +1,8 @@
+{
+  "schema": "ltspice-mcp/store",
+  "store_version": 1,
+  "kind": "circuit-index",
+  "job_id": "exp_port_1790057053_c81218b2",
+  "circuit": "D:\\Shared\\LPspice_circuit\\ltspice\\decks\\_probe_port.cir",
+  "created_at": "2026-09-22T01:04:13.237030-05:00"
+}

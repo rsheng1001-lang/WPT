@@ -1,0 +1,96 @@
+{
+ "basename": "Draft2",
+ "archived_at": "2026-09-22T19:25:22",
+ "run_mtime": "2026-09-21T20:07:44",
+ "log_sha256": "4da9e37d37ac1c983749ff32ad0b5d3bad33f4eb36d4155d2c978eab2e42e7c0",
+ "files": [
+  {
+   "name": "Draft2.op.raw",
+   "role": "oppoint",
+   "bytes": 2524,
+   "sha256": "de9d9343fba718d2297222820ac442631b5eeef1ef573e4d229e70fa48074be9",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2.asc",
+   "role": "schematic",
+   "bytes": 3677,
+   "sha256": "c7ad017170f3528eb0bd94ed6a64cb77bf6b314017553d9c2f4cb7074bdb99d6",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2.net",
+   "role": "deck",
+   "bytes": 1362,
+   "sha256": "4ddd6cf838ce401bcc5cdc58f0469f95abfd8a493272132cee913567938265d9",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2.log",
+   "role": "log",
+   "bytes": 3679534,
+   "sha256": "4da9e37d37ac1c983749ff32ad0b5d3bad33f4eb36d4155d2c978eab2e42e7c0",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2.raw",
+   "role": "waveform",
+   "bytes": 971737970,
+   "sha256": "a9c407cb747107d2e40bbcc0de473a7e22b2bc09c2e643550e42ede0348c3f59",
+   "action": "move"
+  },
+  {
+   "name": "Draft2.db",
+   "role": "db",
+   "bytes": 1028096,
+   "sha256": "3f0c515f80ed00801406386541821b9198feb738c3b6743c491cefde9c74c0a8",
+   "action": "copy"
+  },
+  {
+   "name": "Draft2_sweep.asc",
+   "role": "matching_schematic",
+   "bytes": 3993,
+   "sha256": "220c086ac4889d371ff4653088103acf7f82dbe5180df29c4f0b9269d6889e77",
+   "action": "copy"
+  }
+ ],
+ "sweep": {
+  "signature": "45e9647730",
+  "steps": 5730,
+  "rb_min": 10000.0,
+  "rb_max": 200000.0,
+  "rb_n": 191,
+  "rb_step": 1000.0,
+  "vbp": [
+   3.3,
+   5.0,
+   8.0,
+   10.0,
+   12.0,
+   15.0
+  ],
+  "iref_uA": [
+   10.0,
+   20.0,
+   50.0,
+   100.0,
+   200.0
+  ],
+  "pass1_at_1.5pct": 3783,
+  "pass1_log1pct": 2628,
+  "manifest_sweep": 1,
+  "log_matches_manifest_sha256": true,
+  "directive_hint": [
+   ".step param IREF list 10u 20u 50u 100u 200u",
+   ".step param RB 10k 200k 1k",
+   ".step param VBP list 3.3 5 8 10 12 15"
+  ]
+ },
+ "schematic": {
+  "same_name": "Draft2.asc",
+  "same_name_directives_match_deck": false,
+  "matching_schematic": "Draft2_sweep.asc",
+  "note": "指令级比对（.step/.param/.tran/.meas），非电路等价性证明"
+ },
+ "criterion_pct": 1.5
+}

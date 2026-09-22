@@ -1,0 +1,23 @@
+* Worst-case gate drive: MOSFET threshold at the datasheet limit, 3.3 V rail at
+* its low tolerance. Loads are limited to the range where a cold .op is
+* trustworthy (see core_op.cir); a behavioural-load sweep lands on a spurious
+* branch of the macro-model here (V(OUTA) showed 8.4 V on a 3.2 V rail).
+* The MOSFET model is a sensitivity variant, not a vendor model.
+.include ../models/OPAx333.LIB
+.include ../models/2N7002_VTO25.lib
+.include ../inc/solver.inc
+.include ../inc/core.inc
+V8 BONE_P 0 8.0016
+V33 V3V3 0 3.2
+.param RLOAD=10k
+.step param RLOAD list 1k 10k 50k 65k
+.op
+.meas op I_BONE param I(R_BONE)
+.meas op I_SENSE_R param I(R10)
+.meas op V_ISET param V(I_SET)
+.meas op V_SENSE param V(I_SENSE)
+.meas op V_GATE param V(STIM_GATE)
+.meas op V_OUTA param V(OUTA)
+.meas op V_BONE param V(BONE_P,BONE_N)
+.options plotwinsize=0 numdgt=7
+.end

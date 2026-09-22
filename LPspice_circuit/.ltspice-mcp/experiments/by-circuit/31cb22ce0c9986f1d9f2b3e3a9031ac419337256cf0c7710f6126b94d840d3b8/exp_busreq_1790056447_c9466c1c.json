@@ -1,0 +1,8 @@
+{
+  "schema": "ltspice-mcp/store",
+  "store_version": 1,
+  "kind": "circuit-index",
+  "job_id": "exp_busreq_1790056447_c9466c1c",
+  "circuit": "D:\\Shared\\LPspice_circuit\\ltspice\\decks\\_probe_sink_rout.cir",
+  "created_at": "2026-09-22T00:54:07.853918-05:00"
+}

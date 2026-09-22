@@ -1,0 +1,491 @@
+{
+ "sweeps": [
+  {
+   "sweep": 1,
+   "sig": "45e9647730",
+   "log_tag": "Draft2.log",
+   "log": "work/logs/20260921-222603_Draft2.log",
+   "json": "sweeps/sweep_45e9647730.json",
+   "ingested_at": "2026-09-21T21:00:00",
+   "sha256": "4da9e37d37ac1c983749ff32ad0b5d3bad33f4eb36d4155d2c978eab2e42e7c0",
+   "source": "D:\\Shared\\LPspice_circuit\\self\\Draft2.log",
+   "desc": {
+    "steps": 5730,
+    "rb_min": 10000.0,
+    "rb_max": 200000.0,
+    "rb_n": 191,
+    "rb_step": 1000.0,
+    "rb_uniform": true,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0,
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 2628,
+    "pass0_log1pct": 3102,
+    "pass1_at_1.5pct": 3783,
+    "directive_hint": [
+     ".step param IREF list 10u 20u 50u 100u 200u",
+     ".step param RB 10k 200k 1k",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "sweep": 2,
+   "sig": "b37229cde0",
+   "log_tag": "(日志已丢失)",
+   "log": "",
+   "json": "sweeps/sweep_b37229cde0.json",
+   "ingested_at": "2026-09-21T22:00:00",
+   "sha256": "",
+   "source": "(lost)",
+   "desc": {
+    "steps": 2430,
+    "rb_min": 200000.0,
+    "rb_max": 1000000.0,
+    "rb_n": 81,
+    "rb_step": 10000.0,
+    "rb_uniform": true,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0,
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 169,
+    "pass0_log1pct": 2261,
+    "pass1_at_1.5pct": 516,
+    "directive_hint": [
+     ".step param IREF list 10u 20u 50u 100u 200u",
+     ".step param RB 200k 1Meg 10k",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "原始日志已被扫描 C 覆盖；数据来自本会话解析结果（work/parsed_raw_sweep2.json）"
+  },
+  {
+   "sweep": 3,
+   "sig": "4bf9238bc2",
+   "log_tag": "Draft2_sweep.log",
+   "log": "work/logs/20260921-222603_Draft2_sweep.log",
+   "json": "sweeps/sweep_4bf9238bc2.json",
+   "ingested_at": "2026-09-21T22:28:31",
+   "sha256": "3af63a98659b93f5b2c26887f1b01dcd8be975a88ce919401e15b6aec143a13a",
+   "source": "D:\\Shared\\LPspice_circuit\\self\\Draft2_sweep.log",
+   "desc": {
+    "steps": 2730,
+    "rb_min": 1000000.0,
+    "rb_max": 10000000.0,
+    "rb_n": 91,
+    "rb_step": 100000.0,
+    "rb_uniform": true,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0,
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 0,
+    "pass0_log1pct": 2730,
+    "pass1_at_1.5pct": 8,
+    "directive_hint": [
+     ".step param IREF list 10u 20u 50u 100u 200u",
+     ".step param RB 1Meg 10Meg 100k",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "sweep": 4,
+   "sig": "938585f8f5",
+   "log_tag": "refine (1k 步长)",
+   "log": "",
+   "json": "sweeps/sweep_938585f8f5.json",
+   "ingested_at": "2026-09-21T22:42:43",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 77,
+    "rb_min": 230000.0,
+    "rb_max": 760000.0,
+    "rb_n": 76,
+    "rb_step": 1000.0,
+    "rb_uniform": false,
+    "vbp": [
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     20.0,
+     50.0
+    ],
+    "pass1_log1pct": 30,
+    "pass0_log1pct": 47,
+    "pass1_at_1.5pct": 49,
+    "directive_hint": [
+     ".step param IREF list 20u 50u",
+     ".step param RB <非等步长, 76 个取值>",
+     ".step param VBP list 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：7 个临界窗口 × 11 点，步长 1k，共 77 组"
+  },
+  {
+   "sweep": 5,
+   "sig": "88412c29eb",
+   "log_tag": "refine (100 步长)",
+   "log": "",
+   "json": "sweeps/sweep_88412c29eb.json",
+   "ingested_at": "2026-09-21T22:43:05",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 264,
+    "rb_min": 13000.0,
+    "rb_max": 754000.0,
+    "rb_n": 242,
+    "rb_step": 100.0,
+    "rb_uniform": false,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 138,
+    "pass0_log1pct": 126,
+    "pass1_at_1.5pct": 234,
+    "directive_hint": [
+     ".step param IREF list 20u 50u 100u 200u",
+     ".step param RB <非等步长, 242 个取值>",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：24 个临界窗口 × 11 点，步长 100，共 264 组"
+  },
+  {
+   "sweep": 6,
+   "sig": "1ceaae4d79",
+   "log_tag": "refine (10 步长)",
+   "log": "",
+   "json": "sweeps/sweep_1ceaae4d79.json",
+   "ingested_at": "2026-09-21T22:43:15",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 264,
+    "rb_min": 13600.0,
+    "rb_max": 753800.0,
+    "rb_n": 242,
+    "rb_step": 10.0,
+    "rb_uniform": false,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 159,
+    "pass0_log1pct": 105,
+    "pass1_at_1.5pct": 264,
+    "directive_hint": [
+     ".step param IREF list 20u 50u 100u 200u",
+     ".step param RB <非等步长, 242 个取值>",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：24 个临界窗口 × 11 点，步长 10，共 264 组"
+  },
+  {
+   "sweep": 7,
+   "log_tag": "refine (1 步长)",
+   "log": "",
+   "json": "sweeps/sweep_0ca1734e34.json",
+   "ingested_at": "2026-09-21T22:49:32",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 264,
+    "rb_min": 13650.0,
+    "rb_max": 753720.0,
+    "rb_n": 252,
+    "rb_step": 1.0,
+    "rb_uniform": false,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 122,
+    "pass0_log1pct": 142,
+    "pass1_at_1.5pct": 264,
+    "directive_hint": [
+     ".step param IREF list 20u 50u 100u 200u",
+     ".step param RB <非等步长, 252 个取值>",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：24 个临界窗口 × 11 点，步长 1",
+   "sig": "0ca1734e34"
+  },
+  {
+   "sweep": 8,
+   "sig": "ded05258c0",
+   "log_tag": "refine (10 步长)",
+   "log": "",
+   "json": "sweeps/sweep_ded05258c0.json",
+   "ingested_at": "2026-09-21T23:22:10",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 330,
+    "rb_min": 13700.0,
+    "rb_max": 1600000.0,
+    "rb_n": 307,
+    "rb_step": 10.0,
+    "rb_uniform": false,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0,
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 0,
+    "pass0_log1pct": 330,
+    "pass1_at_1.5pct": 128,
+    "directive_hint": [
+     ".step param IREF list 10u 20u 50u 100u 200u",
+     ".step param RB <非等步长, 307 个取值>",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：30 个临界窗口 × 11 点，步长 10"
+  },
+  {
+   "sweep": 9,
+   "sig": "e5afe051a9",
+   "log_tag": "refine (1 步长)",
+   "log": "",
+   "json": "sweeps/sweep_e5afe051a9.json",
+   "ingested_at": "2026-09-21T23:22:21",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 330,
+    "rb_min": 13740.0,
+    "rb_max": 1510000.0,
+    "rb_n": 328,
+    "rb_step": 1.0,
+    "rb_uniform": false,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0,
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 0,
+    "pass0_log1pct": 330,
+    "pass1_at_1.5pct": 157,
+    "directive_hint": [
+     ".step param IREF list 10u 20u 50u 100u 200u",
+     ".step param RB <非等步长, 328 个取值>",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：30 个临界窗口 × 11 点，步长 1"
+  },
+  {
+   "sweep": 10,
+   "sig": "c616e1d972",
+   "log_tag": "refine (1 步长)",
+   "log": "",
+   "json": "sweeps/sweep_c616e1d972.json",
+   "ingested_at": "2026-09-21T23:22:29",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 231,
+    "rb_min": 73130.0,
+    "rb_max": 1504000.0,
+    "rb_n": 230,
+    "rb_step": 1.0,
+    "rb_uniform": false,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0,
+     20.0,
+     50.0,
+     100.0,
+     200.0
+    ],
+    "pass1_log1pct": 0,
+    "pass0_log1pct": 231,
+    "pass1_at_1.5pct": 109,
+    "directive_hint": [
+     ".step param IREF list 10u 20u 50u 100u 200u",
+     ".step param RB <非等步长, 230 个取值>",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：21 个临界窗口 × 11 点，步长 1"
+  },
+  {
+   "sweep": 11,
+   "sig": "89829b3e07",
+   "log_tag": "refine (1 步长)",
+   "log": "",
+   "json": "sweeps/sweep_89829b3e07.json",
+   "ingested_at": "2026-09-21T23:22:33",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 99,
+    "rb_min": 200020.0,
+    "rb_max": 1503700.0,
+    "rb_n": 99,
+    "rb_step": 1.0,
+    "rb_uniform": false,
+    "vbp": [
+     3.3,
+     5.0,
+     8.0,
+     10.0,
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0,
+     20.0,
+     50.0
+    ],
+    "pass1_log1pct": 0,
+    "pass0_log1pct": 99,
+    "pass1_at_1.5pct": 55,
+    "directive_hint": [
+     ".step param IREF list 10u 20u 50u",
+     ".step param RB <非等步长, 99 个取值>",
+     ".step param VBP list 3.3 5 8 10 12 15"
+    ]
+   },
+   "note": "精细化扫描：9 个临界窗口 × 11 点，步长 1"
+  },
+  {
+   "sweep": 12,
+   "sig": "572c5593d5",
+   "log_tag": "refine (1 步长)",
+   "log": "",
+   "json": "sweeps/sweep_572c5593d5.json",
+   "ingested_at": "2026-09-21T23:22:35",
+   "sha256": "",
+   "source": "refine.py",
+   "desc": {
+    "steps": 22,
+    "rb_min": 1199550.0,
+    "rb_max": 1503640.0,
+    "rb_n": 22,
+    "rb_step": 1.0,
+    "rb_uniform": false,
+    "vbp": [
+     12.0,
+     15.0
+    ],
+    "iref_uA": [
+     10.0
+    ],
+    "pass1_log1pct": 0,
+    "pass0_log1pct": 22,
+    "pass1_at_1.5pct": 10,
+    "directive_hint": [
+     ".step param IREF list 10u",
+     ".step param RB <非等步长, 22 个取值>",
+     ".step param VBP list 12 15"
+    ]
+   },
+   "note": "精细化扫描：2 个临界窗口 × 11 点，步长 1"
+  }
+ ]
+}

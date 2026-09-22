@@ -1,0 +1,15 @@
+* TVS model comparison: the surrogate in models/APPROX_NOT_VENDOR.lib against
+* Vishay's published SPICE library, both swept 0..25 V so leakage and the
+* avalanche knee can be compared directly. Note the vendor library states it
+* applies to the VESDxxC1-HD1 (SOD-323) variant; the board part is -02V
+* (SOD-523), so this qualifies the model, not the package.
+.include ../models/APPROX_NOT_VENDOR.lib
+.include ../../vendor/vishay/86547SPICE_Vishay_VESD01C1-HD1-to-VESD33C1-HD1.LIB
+V_A V_BUS_A 0 12
+XD5A V_BUS_A 0 VESD16_APPROX
+V_B V_BUS_B 0 12
+XD5B 0 V_BUS_B VESD16C1
+.dc V_A 0 25 0.25 V_B 0 25 0.25
+.save I(V_A) I(V_B) V(V_BUS_A) V(V_BUS_B)
+.options plotwinsize=0 numdgt=7
+.end

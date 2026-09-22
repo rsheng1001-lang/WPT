@@ -1,0 +1,19 @@
+{
+  "source": "optimized_v10_horizontal\\WPT_Exploded_Refined.svg",
+  "groups": 15,
+  "paths": 356,
+  "texts": 34,
+  "delay_ms": 0,
+  "batch_size": 15,
+  "frames": 0,
+  "steps": [
+    {
+      "groups": 15,
+      "paths": 356,
+      "texts": 34
+    }
+  ],
+  "mode": "instant",
+  "target_seconds": null,
+  "actual_construction_seconds": 6.200770599999487
+}

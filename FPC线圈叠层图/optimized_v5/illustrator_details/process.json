@@ -1,0 +1,19 @@
+{
+  "source": "D:\\Shared\\FPC\u7ebf\u5708\u53e0\u5c42\u56fe\\optimized_v5\\WPT_Geometry_Details.svg",
+  "groups": 8,
+  "paths": 262,
+  "texts": 15,
+  "delay_ms": 0,
+  "batch_size": 8,
+  "frames": 0,
+  "steps": [
+    {
+      "groups": 8,
+      "paths": 262,
+      "texts": 15
+    }
+  ],
+  "mode": "instant",
+  "target_seconds": null,
+  "actual_construction_seconds": 0.10411290000047302
+}

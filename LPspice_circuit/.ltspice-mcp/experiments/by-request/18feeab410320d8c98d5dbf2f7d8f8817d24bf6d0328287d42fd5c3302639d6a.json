@@ -1,0 +1,10 @@
+{
+  "schema": "ltspice-mcp/store",
+  "store_version": 1,
+  "kind": "request-index",
+  "request_id": "req_1790057053_778e8cd4",
+  "fingerprint": "440bac6fb8725bbf0fc36fe5b658ce11225842b7178e239addcd89cfd429b025",
+  "canonicalizer_version": 4,
+  "job_id": "exp_port_1790057053_c81218b2",
+  "created_at": "2026-09-22T01:04:13.230026-05:00"
+}

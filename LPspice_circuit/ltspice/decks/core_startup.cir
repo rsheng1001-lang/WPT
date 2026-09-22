@@ -1,0 +1,28 @@
+* Cold power-up of the sink: asks whether the loop starts cleanly and whether
+* it dumps extra charge into the tissue on the way up.
+* Supplies are ideal TEST FIXTURES (a real start comes through the surrogates
+* in power.inc), and RLOAD is a test resistor.
+* Two deliberate restrictions, both properties of the vendor macro-model:
+*   - the span is 3s, not 30ms, because the model holds its internal reference
+*     node on 5uF against two 1MEG (~2.5s); a short run reports that
+*     un-established state, with the output sitting outside the supply rails.
+*   - one load per run. Above ~50k the model's own t=0 operating point lands on
+*     a spurious branch (V(OUTA)=-5.2V on a 0/3.3V supply) and the transient
+*     then grinds without advancing, so heavier loads are not reported here.
+.include ../models/OPAx333.LIB
+.include ../models/2N7002_DIODES.lib
+.include ../inc/solver.inc
+.include ../inc/core.inc
+V8 BONE_P 0 PWL(0 0 1m 8.0016 3 8.0016)
+V33 V3V3 0 PWL(0 0 1m 0 2m 3.3 3 3.3)
+.param RLOAD=10k
+.tran 0 3 0 200u
+.save V(BONE_P) V(BONE_N) V(V3V3) V(I_SET) V(I_SENSE) V(OUTA) V(STIM_GATE) I(R_BONE) I(R10)
+.meas tran I_FINAL AVG I(R_BONE) FROM 2.9 TO 3
+.meas tran I_FINAL_MIN MIN I(R_BONE) FROM 2.9 TO 3
+.meas tran I_FINAL_MAX MAX I(R_BONE) FROM 2.9 TO 3
+.meas tran I_PEAK MAX I(R_BONE)
+.meas tran V_OUTA_MIN MIN V(OUTA)
+.meas tran V_OUTA_MAX MAX V(OUTA)
+.options plotwinsize=0 numdgt=7
+.end

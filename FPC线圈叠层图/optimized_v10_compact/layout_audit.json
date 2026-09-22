@@ -1,0 +1,100 @@
+{
+  "source": "optimized_v10",
+  "style": "compact portrait (tight layer pitch)",
+  "layer_order_top_to_bottom": [
+    "TOP_COMPONENTS",
+    "TOP_COVERLAY",
+    "L1_TOP_COPPER",
+    "DIELECTRIC_1",
+    "L2_GND",
+    "CORE",
+    "L3_POWER",
+    "DIELECTRIC_2",
+    "L4_BOTTOM_COPPER",
+    "BOTTOM_COVERLAY",
+    "BOTTOM_COMPONENTS"
+  ],
+  "viewbox": [
+    436.0,
+    554.0
+  ],
+  "export_width_mm": 90.0,
+  "canvas_mm": [
+    90.0,
+    114.36
+  ],
+  "layer_pitch_pt": 30.0,
+  "artwork_scale": 0.62,
+  "label_size_pt": 12.0,
+  "sublabel_size_pt": 12.0,
+  "minimum_font_pt": 7.0215993642996475,
+  "geometry": {
+    "BOTTOM_COMPONENTS": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 392.0,
+      "source_center_pt": 1105
+    },
+    "BOTTOM_COVERLAY": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 362.0,
+      "source_center_pt": 1003
+    },
+    "L4_BOTTOM_COPPER": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 332.0,
+      "source_center_pt": 901
+    },
+    "DIELECTRIC_2": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 302.0,
+      "source_center_pt": 799
+    },
+    "L3_POWER": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 272.0,
+      "source_center_pt": 697
+    },
+    "CORE": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 242.0,
+      "source_center_pt": 595
+    },
+    "L2_GND": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 212.0,
+      "source_center_pt": 493
+    },
+    "DIELECTRIC_1": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 182.0,
+      "source_center_pt": 391
+    },
+    "L1_TOP_COPPER": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 152.0,
+      "source_center_pt": 289
+    },
+    "TOP_COVERLAY": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 122.0,
+      "source_center_pt": 187
+    },
+    "TOP_COMPONENTS": {
+      "path_data_unchanged": true,
+      "artwork_scale": 0.62,
+      "station_y": 92.0,
+      "source_center_pt": 85
+    }
+  },
+  "notes": "artwork path data copied unchanged; only station placement, scale and text are new"
+}

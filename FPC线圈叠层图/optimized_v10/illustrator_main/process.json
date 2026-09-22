@@ -1,0 +1,19 @@
+{
+  "source": "D:\\Shared\\FPC\u7ebf\u5708\u53e0\u5c42\u56fe\\optimized_v10\\WPT_Exploded_Refined.svg",
+  "groups": 14,
+  "paths": 357,
+  "texts": 31,
+  "delay_ms": 0,
+  "batch_size": 14,
+  "frames": 0,
+  "steps": [
+    {
+      "groups": 14,
+      "paths": 357,
+      "texts": 31
+    }
+  ],
+  "mode": "instant",
+  "target_seconds": null,
+  "actual_construction_seconds": 5.931951399999889
+}

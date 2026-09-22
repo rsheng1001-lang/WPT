@@ -1,0 +1,10 @@
+* Independent manufacturer macro-model qualification: unity-gain DC follower.
+.include ../models/OPAx333.LIB
+VP V3V3 0 3.3
+VIN IN 0 0.3
+XAMP IN OUT V3V3 0 OUT OPAx333
+RL OUT 0 100k
+.dc VIN 0.1 3.2 0.1
+.options gmin=1e-15 abstol=1e-13 reltol=1e-5 plotwinsize=0 numdgt=7
+.save V(IN) V(OUT) V(V3V3)
+.end

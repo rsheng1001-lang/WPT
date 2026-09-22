@@ -1,0 +1,80 @@
+{
+  "source": "optimized_v10",
+  "portrait_sha256": {
+    "WPT_Exploded_Refined.ai": "bb7f74242c30129e1aab47dfed18814d8c7a6239f3cf7c6dc14cabd61e055829",
+    "WPT_Exploded_Refined.pdf": "da97089cd8abc58a187d1a7c456fe627000ba75d9de16f354a3b265a68809249",
+    "WPT_Exploded_Refined.svg": "a70c6c48e3a0bb429f979f979758218c2b16caa53e3c35edf47b6d3e77804c02",
+    "WPT_Exploded_Refined.png": "0f27924f9b52e01c5a5cb1059fbfcdb739f992af4f91dbef24228e9a323d30c7"
+  },
+  "landscape_geometry": {
+    "BOTTOM_COMPONENTS": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 701
+    },
+    "BOTTOM_COVERLAY": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 648
+    },
+    "L4_BOTTOM_COPPER": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 569
+    },
+    "DIELECTRIC_2": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 490
+    },
+    "L3_POWER": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 437
+    },
+    "CORE": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 384
+    },
+    "L2_GND": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 331
+    },
+    "DIELECTRIC_1": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 278
+    },
+    "L1_TOP_COPPER": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 199
+    },
+    "TOP_COVERLAY": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 120
+    },
+    "TOP_COMPONENTS": {
+      "path_data_unchanged": true,
+      "uniform_scale": 0.65,
+      "center_y": 65
+    }
+  },
+  "landscape_viewbox": [
+    1000,
+    750
+  ],
+  "landscape_canvas_mm": [
+    180,
+    135
+  ],
+  "minimum_font_pt": 7.143307086614175,
+  "detail_scale": 2.4,
+  "detail_scale_bar_mm": 2,
+  "detail_scale_bar_viewbox_length": 40.13858267716536,
+  "detail_views": "clipped orthographic source vectors; no geometry edits",
+  "reference_designators": false
+}

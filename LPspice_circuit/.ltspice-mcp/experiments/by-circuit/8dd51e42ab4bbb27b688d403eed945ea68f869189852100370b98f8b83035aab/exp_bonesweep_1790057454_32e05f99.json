@@ -1,0 +1,8 @@
+{
+  "schema": "ltspice-mcp/store",
+  "store_version": 1,
+  "kind": "circuit-index",
+  "job_id": "exp_bonesweep_1790057454_32e05f99",
+  "circuit": "D:\\Shared\\LPspice_circuit\\ltspice\\decks\\_probe_bone_sweep.cir",
+  "created_at": "2026-09-22T01:10:54.375594-05:00"
+}

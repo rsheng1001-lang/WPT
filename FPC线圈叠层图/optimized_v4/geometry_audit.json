@@ -1,0 +1,121 @@
+{
+  "origin_pt": [
+    41.72030774278215,
+    41.72437642169729
+  ],
+  "registration_votes": 20,
+  "chip_pairs_matched": 27,
+  "chip_fit_max_error_mm": 0.0006121358483857774,
+  "old_origin_pt": [
+    38.85,
+    38.85
+  ],
+  "old_to_new_shift_mm": [
+    1.0125807870370345,
+    1.0140161265432113
+  ],
+  "components": 41,
+  "cutouts": 8,
+  "tilt": 0.32,
+  "scale": 4.45,
+  "copper_layers": {
+    "L1_TOP": {
+      "polylines": 36,
+      "fills": 115
+    },
+    "L2_GND": {
+      "polylines": 27,
+      "fills": 51
+    },
+    "L3_POWER": {
+      "polylines": 22,
+      "fills": 47
+    },
+    "L4_BOTTOM": {
+      "polylines": 82,
+      "fills": 150
+    }
+  },
+  "coverlay": {
+    "TOP_COVERLAY": {
+      "source": "L1_TOP",
+      "pad_candidates": 85,
+      "excluded_via_markers": 30,
+      "merged_window_regions": 25,
+      "expansion_mm": 0.1,
+      "derived": true,
+      "nominal_pi_um": 12.5,
+      "nominal_adhesive_um": 15,
+      "opacity": 1.0,
+      "window_area_mm2": 51.158460919600486,
+      "remaining_film_area_mm2": 384.7447120378415,
+      "valid": true,
+      "window_overlap_area_mm2": 0.0
+    },
+    "BOTTOM_COVERLAY": {
+      "source": "L4_BOTTOM",
+      "pad_candidates": 121,
+      "excluded_via_markers": 29,
+      "merged_window_regions": 26,
+      "expansion_mm": 0.1,
+      "derived": true,
+      "nominal_pi_um": 12.5,
+      "nominal_adhesive_um": 15,
+      "opacity": 1.0,
+      "window_area_mm2": 41.91788888607954,
+      "remaining_film_area_mm2": 393.98528407136257,
+      "valid": true,
+      "window_overlap_area_mm2": 0.0
+    }
+  },
+  "stack_top_to_bottom": [
+    "TOP_COMPONENTS",
+    "TOP_COVERLAY",
+    "L1_TOP_COPPER",
+    "DIELECTRIC_1",
+    "L2_GND",
+    "CORE",
+    "L3_POWER",
+    "DIELECTRIC_2",
+    "L4_BOTTOM_COPPER",
+    "BOTTOM_COVERLAY",
+    "BOTTOM_COMPONENTS"
+  ],
+  "reference_designators_drawn": false,
+  "outline_source": "_exploded_view_build/outline_contours.json",
+  "coverlay_color": "#E6DFC7",
+  "layer_pitch_pt": 102,
+  "layer_centers_pt": {
+    "TOP_COMPONENTS": 85,
+    "TOP_COVERLAY": 187,
+    "L1_TOP_COPPER": 289,
+    "DIELECTRIC_1": 391,
+    "L2_GND": 493,
+    "CORE": 595,
+    "L3_POWER": 697,
+    "DIELECTRIC_2": 799,
+    "L4_BOTTOM_COPPER": 901,
+    "BOTTOM_COVERLAY": 1003,
+    "BOTTOM_COMPONENTS": 1105
+  },
+  "visual_window_backing_color": "#F6F4EB",
+  "main_window_treatment": "exact film geometry with removable low-contrast visual backing; no window-edge strokes",
+  "detail_window_treatment": "complete true cut-outs, no backing",
+  "v3_data_comparison": {
+    "components_registered.json": {
+      "v3_sha256": "b2fb44d88635e91ce751e376cbc7509be65452f1e19a683d7d9a0f8340d10bc6",
+      "v4_sha256": "b2fb44d88635e91ce751e376cbc7509be65452f1e19a683d7d9a0f8340d10bc6",
+      "identical": true
+    },
+    "TOP_COVERLAY_windows.json": {
+      "v3_sha256": "df4baf6d4c171fb8baab1560f34bdd085d45abb55eee6b3d54acac25dce64643",
+      "v4_sha256": "df4baf6d4c171fb8baab1560f34bdd085d45abb55eee6b3d54acac25dce64643",
+      "identical": true
+    },
+    "BOTTOM_COVERLAY_windows.json": {
+      "v3_sha256": "3c8f9492c9db40535b8fc9f616f700b88c2e95bcef1cde71aeb6f49832e54c02",
+      "v4_sha256": "3c8f9492c9db40535b8fc9f616f700b88c2e95bcef1cde71aeb6f49832e54c02",
+      "identical": true
+    }
+  }
+}
